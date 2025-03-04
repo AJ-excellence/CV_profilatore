@@ -1,13 +1,15 @@
 1 Raccolta dati
-   Ricevo un flusso di file CSV con CV dei candidati in pdf
-   Ricevo anche altri allegati (con estensioni aggiuntive).
+   Importo un CV in pdf.
+   Ricevo anche metadati (magari con estensioni aggiuntive).
    
-BASIC: compilo un form e inserisco i dati a mano (dati da non dover estrarre) -> Requisito: ottenere item json con lista delle keys e values compilata
-MEDIUM: prendo il file tutto con la stessa estensione -> Requisito: avere il contenuto del file in forma txt in output
-ADVANCED: prendo il file con diverse estensioni (CSV, PDF...) -> Requisito: avere il contenuto del file in forma txt in output
+BASIC: allego al form un pdf e estraggo i dati -> Requisito: ottenere item json con lista delle keys e values compilata
+MEDIUM: allego al form un pdf e compilo metadati
+prendo il file tutto con la stessa estensione -> Requisito: avere il contenuto del file in forma txt in output
+ADVANCED: allego un file sul form e ricevo metadati da piattaforma esterna (come reclutamento) 
+prendo il file con diverse estensioni (CSV, PDF...) -> Requisito: avere il contenuto del file in forma txt in output
 
 2 Estrazione e Pre-etichettatura
-   Requisiti = estraggo i criteri aziendali e obbiettivi prefissati (target minimi per esperienza, competenze richieste).   
+   Requisiti = estraggo i criteri aziendali e obbiettivi prefissati dai jobpost (target minimi per esperienza, competenze richieste).   
    Analizzo e incrocio i CV con i requisiti (es. anni di esperienza, settore, certificazioni).
    Filtro automaticamente i CV che non rispettano la soglia minima (pensavo di dare un voto iniziale poi con un if elimino quelli troppo bassi).
 
