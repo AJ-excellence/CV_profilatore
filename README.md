@@ -3,10 +3,8 @@
    Ricevo anche metadati (magari con estensioni aggiuntive).
    
 BASIC: allego al form un pdf e estraggo i dati -> Requisito: ottenere item json con lista delle keys e values compilata
-MEDIUM: allego al form un pdf e compilo metadati
-prendo il file tutto con la stessa estensione -> Requisito: avere il contenuto del file in forma txt in output
-ADVANCED: allego un file sul form e ricevo metadati da piattaforma esterna (come reclutamento) 
-prendo il file con diverse estensioni (CSV, PDF...) -> Requisito: avere il contenuto del file in forma txt in output
+MEDIUM: allego al form un pdf e compilo metadati, poi estraggo i dati -> Requisito: come prima
+ADVANCED: allego un file sul form e ricevo metadati da piattaforma esterna (come reclutamento) -> Requisito: come prima
 
 2 Estrazione e Pre-etichettatura
    Requisiti = estraggo i criteri aziendali e obbiettivi prefissati dai jobpost (target minimi per esperienza, competenze richieste).   
