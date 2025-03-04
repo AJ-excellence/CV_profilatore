@@ -1,6 +1,6 @@
 1 Raccolta dati
-   Ricevo un flusso di file CSV con CV dei candidati
-   Ricevo anche allegati (in PDF o estensioni aggiuntive) (più facile fare tutto in CSV, ho meno nodi da gestire).
+   Ricevo un flusso di file CSV con CV dei candidati in pdf
+   Ricevo anche altri allegati (con estensioni aggiuntive).
    
 BASIC: compilo un form e inserisco i dati a mano (dati da non dover estrarre) -> Requisito: ottenere item json con lista delle keys e values compilata
 MEDIUM: prendo il file tutto con la stessa estensione -> Requisito: avere il contenuto del file in forma txt in output
