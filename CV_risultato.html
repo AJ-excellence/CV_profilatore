@@ -3,53 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bocciato</title>
+    <title>Layout Professionale</title>
     <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        * {
+            box-sizing: border-box;
             margin: 0;
-            background-color: #f0f0f0;
+            padding: 0;
             font-family: Arial, sans-serif;
         }
-        .bocciato {
-            font-size: 80px;
-            font-weight: bold;
-            color: red;
-            border: 5px solid red;
-            padding: 20px;
-            text-align: center;
-            background-color: white;
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
         }
-        .risultato {
-            font-size: 20px;
-            color: black;
-            margin-top: 20px;
-            text-align: center;
-            font-weight: normal;
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 600px;
+            width: 100%;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .box {
+            border: 2px solid black;
+            padding: 20px;
+            flex: 1 1 45%;
+            min-width: 250px;
+            margin: 5px;
+        }
+        .box.large {
+            flex: 1 1 100%;
+        }
+        h2 {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        p.small {
+            font-size: 12px;
+            color: gray;
+            margin-top: 5px;
         }
     </style>
 </head>
 <body>
-    <div class="bocciato">
-        BOCCIATO
-    </div>
-    <div class="risultato">
-        REQUISITI NON SODDISFATTI:
-
-1. Esperienza professionale:
-- Richiesto: 3-5 anni nel ruolo con certificazioni Mifid
-- Attuale: ~3 anni includendo il tirocinio, senza certificazioni specificate
-
-2. Certificazioni e iscrizioni:
-- Manca evidenza dell'iscrizione all'albo OCF (requisito obbligatorio)
-- Non sono indicate certificazioni Mifid
-
-Motivazione dello scarto:
-Nonostante il candidato soddisfi i requisiti di formazione accademica e mostri esperienza nel settore, l'assenza di certificazioni obbligatorie (Mifid e OCF) e un'esperienza leggermente inferiore a quella richiesta rendono il profilo non completamente allineato con i requisiti della posizione.
+    <div class="container">
+        <div class="box">
+            <h2>Analisi CV</h2>
+            <p class="small">Il CV presenta una struttura chiara e professionale, con un percorso formativo e lavorativo coerente nel settore finanziario. La candidata ha una laurea magistrale in Economia Aziendale da Ca' Foscari e attualmente lavora come Consulente Finanziaria presso Banca XYZ, dopo un periodo di tirocinio. Il linguaggio utilizzato è appropriato e tecnico. Le competenze professionali sono ben evidenziate, supportate da certificazioni rilevanti (MIFID II e OCF). Il percorso mostra una progressione logica ma con esperienza ancora limitata (circa 4 anni). Mancano dettagli su competenze linguistiche e informatiche.</p>
+        </div>
+        <div class="box">
+            <h2>Profilo Comportamentale</h2>
+            <p class="small">L'analisi del profilo comportamentale iniziale evidenzia una persona metodica, strutturata e orientata ai risultati, con un forte focus tecnico-consulenziale. Dalle risposte alle domande mirate emergono alcuni elementi contrastanti: la risposta sulla gestione del cliente dimostra competenze analitiche e problem-solving, ma fa riferimento a modelli ML non coerenti con il profilo finanziario dichiarato nel CV. Gli interessi extra-lavorativi appaiono limitati (solo calcio) e la risposta sugli obiettivi di carriera (diventare direttore BCE) sembra poco realistica rispetto al profilo. L'approccio 'pragmatico' dichiarato nella gestione dello stress è generico. Mancano esperienze di leadership e coordinamento team. Si raccomanda un ulteriore approfondimento su: 1) Coerenza delle esperienze dichiarate 2) Realismo degli obiettivi professionali 3) Competenze relazionali e di team working 4) Gestione complessità e stress.</p>
+        </div>
+        <div class="box large">
+            <h2>Domande fatte</h2>
+            <p class="small">Può descrivere una situazione complessa con un cliente e come l'ha gestita? Un cliente aveva problemi con un modello ML che generava troppi falsi positivi. Ho analizzato i dati, individuato il problema e proposto soluzioni chiare. Dopo aver bilanciato il dataset e ottimizzato il modello, i falsi positivi sono diminuiti del 40%, migliorando l'efficienza del cliente.
+Quali sono i suoi interessi e attività extra-lavorative? Calcio
+Ha avuto esperienze di coordinamento di team o progetti? In quale contesto? No
+Quali sono i suoi obiettivi di crescita professionale nei prossimi 3-5 anni? Diventare direttore della BCE
+Come gestisce le situazioni di forte stress lavorativo? In modo pragmatico</p>
+        </div>
     </div>
 </body>
 </html>
