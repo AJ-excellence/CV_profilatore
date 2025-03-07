@@ -3,155 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esito Analisi</title>
+    <title>Esito</title>
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            background-color: #f4f4f4;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
             text-align: center;
         }
         .container {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            max-width: 600px;
-            background: white;
+            background-color: white;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            max-width: 400px;
         }
-        .section {
-            border-bottom: 1px solid #ddd;
-            padding: 15px 0;
-        }
-        .section:last-child {
-            border-bottom: none;
-        }
-        .title {
-            font-size: 20px;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 5px;
-        }
-        .content {
-            font-size: 14px;
-            color: #555;
-            white-space: pre-line;
-        }
-        .esito {
+        .titolo {
             font-size: 24px;
             font-weight: bold;
-            color: #2e7d32;
-            padding: 10px;
-            margin-top: 10px;
-        }
-        .analisi-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-        }
-        .analisi-item {
-            width: 48%;
-        }
-        .questions-list {
-            text-align: left;
-            font-size: 14px;
-            color: #555;
-            margin-top: 15px;
-        }
-        .question-item {
+            color: #333;
             margin-bottom: 10px;
         }
-        .question-title {
+        .esito {
+            font-size: 40px;
             font-weight: bold;
+            color: #c62828;
+            padding: 10px;
         }
-        .question-answer {
-            margin-left: 10px;
+        .risultato {
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px;
+            white-space: pre-line;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="section">
-            <div class="title">Esito Analisi CV</div>
-            <div class="esito">PROMOSSO</div>
-        </div>
-        
-        <div class="section">
-            <div class="analisi-container">
-                <div class="analisi-item">
-                    <div class="title">Analisi CV</div>
-                    <div class="content">**Struttura e Organizzazione**
-- CV ben strutturato e organizzato in sezioni chiare
-- Presenta esperienza professionale rilevante nel settore finanziario
-- Mancano informazioni su formazione accademica e certificazioni
+        <div class="titolo">Esito Analisi CV</div>
+        <div class="esito">BOCCIATO</div>
+        <div class="risultato">Criticità rilevate:
 
-**Linguaggio e Presentazione**
-- Tono professionale e appropriato
-- Uso di termini tecnici del settore
-- Focus sulle competenze chiave richieste dal ruolo
+1. Non è specificata l'iscrizione all'albo OCF (requisito fondamentale)
+2. Non sono menzionate le certificazioni MIFID richieste
+3. Non è indicato il titolo di studio (laurea/diploma)
 
-**Punti di Forza**
-- Oltre 10 anni di esperienza specifica
-- Progressione di carriera evidente
-- Competenze tecniche rilevanti
-
-**Carenze Rilevate**
-- Assenza di dettagli su formazione e certificazioni
-- Mancanza di metriche quantitative sui risultati raggiunti
-- Limitata descrizione delle soft skills</div>
-                </div>
-                <div class="analisi-item">
-                    <div class="title">Profilo Comportamentale</div>
-                    <div class="content">**Valutazione Generale**
-- Profilo caratterizzato da atteggiamento poco collaborativo e difensivo
-- Risposte alle domande tecniche evasive o inappropriate
-- Scarsa propensione all'approfondimento professionale
-
-**Criticità Emerse**
-- Resistenza a fornire dettagli sulle competenze tecniche
-- Atteggiamento non professionale nelle risposte
-- Hobby dichiarato (caccia) non allineato con soft skills attese
-
-**Conclusioni**
-- Profilo NON IDONEO per posizioni di consulenza finanziaria
-- Evidenti incongruenze tra CV e comportamento
-- Necessità di verifiche approfondite sulla veridicità delle credentials
-- Raccomandazione: non procedere con la selezione</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="title">Domande Fatte</div>
-            <div class="questions-list">
-                <div class="question-item">
-                            <div class="question-title">• Può descrivere il suo percorso formativo, includendo titoli di studio, certificazioni professionali e competenze linguistiche?</div>
-                            <div class="question-answer">Sta zitto</div>
-                        </div><div class="question-item">
-                            <div class="question-title">• Quali software e strumenti di analisi finanziaria utilizza quotidianamente nel suo lavoro?</div>
-                            <div class="question-answer">Non mi interessa</div>
-                        </div><div class="question-item">
-                            <div class="question-title">• Qual è la dimensione attuale del suo portafoglio clienti e quali performance medie ha raggiunto nell'ultimo anno?</div>
-                            <div class="question-answer">Grande</div>
-                        </div><div class="question-item">
-                            <div class="question-title">• Come gestisce situazioni di mercato particolarmente volatili e quali strategie adotta per proteggere gli investimenti dei clienti?</div>
-                            <div class="question-answer">In modo deciso</div>
-                        </div><div class="question-item">
-                            <div class="question-title">• Quali attività extra-professionali o hobby pratica e come contribuiscono al suo sviluppo personale?</div>
-                            <div class="question-answer">Cacciare cinghiali</div>
-                        </div>
-            </div>
-        </div>
+Nonostante l'esperienza professionale superi i requisiti temporali e le capacità relazionali/commerciali siano evidenti, l'assenza di informazioni su requisiti fondamentali (in particolare iscrizione OCF) non permette di confermare l'idoneità del candidato.</div>
     </div>
 </body>
 </html>
