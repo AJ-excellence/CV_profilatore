@@ -3,115 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout Professionale</title>
+    <title>Esito</title>
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            background-color: #f4f4f4;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
         }
         .container {
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 600px;
-            width: 100%;
-            background: white;
+            background-color: white;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            max-width: 400px;
         }
-        .box {
-            border: 2px solid black;
-            padding: 20px;
-            flex: 1 1 45%;
-            min-width: 250px;
-            margin: 5px;
-        }
-        .box.large {
-            flex: 1 1 100%;
-        }
-        h2 {
-            font-size: 16px;
+        .titolo {
+            font-size: 24px;
             font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
         }
-        p.small {
-            font-size: 12px;
-            color: gray;
-            margin-top: 5px;
+        .esito {
+            font-size: 40px;
+            font-weight: bold;
+            color: #c62828;
+            padding: 10px;
+        }
+        .risultato {
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px;
+            white-space: pre-line;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box">
-            <h2>Analisi CV</h2>
-            <p class="small">VALUTAZIONE CURRICULUM VITAE
+        <div class="titolo">Esito Analisi CV</div>
+        <div class="esito">BOCCIATO</div>
+        <div class="risultato">Criticità rilevate:
 
-1. Presentazione e Struttura:
-- CV ben organizzato e strutturato
-- Linguaggio professionale e appropriato
-- Buona chiarezza espositiva
+1. Non è indicata l'iscrizione all'albo OCF (requisito fondamentale)
+2. Non sono menzionate le certificazioni MIFID richieste
+3. Titolo di studio non specificato (laurea/diploma)
 
-2. Esperienza Professionale:
-- 8+ anni nel settore finanziario
-- Progressione di carriera evidente (Junior → Senior)
-- Focus su gestione portafogli e consulenza
-
-3. Competenze Chiave:
-- Gestione clienti alto valore
-- Pianificazione finanziaria
-- Analisi investimenti
-- Capacità organizzative
-
-4. Elementi Distintivi:
-- Organizzazione eventi/seminari
-- Orientamento al cliente
-- Capacità di ascolto
-- Soluzioni personalizzate</p>
-        </div>
-        <div class="box">
-            <h2>Profilo Comportamentale</h2>
-            <p class="small">PROFILO COMPORTAMENTALE
-
-1. Punti di Forza:
-- Leadership basata sull'esempio
-- Approccio strutturato alla gestione team
-- Forte orientamento all'aggiornamento professionale
-- Ottime capacità comunicative multilingue
-
-2. Competenze Manageriali:
-- Gestione efficace del team
-- Cultura del merito
-- Capacità motivazionali
-- Focus su obiettivi misurabili
-
-3. Sviluppo Professionale:
-- Formazione continua
-- Networking attivo
-- Interesse per innovazione
-- Visione strategica
-
-4. Aree di Approfondimento:
-- Dettagli specifici performance portafoglio
-- Dimensioni precise team gestito
-- KPI quantitativi
-- Case history specifici</p>
-        </div>
-        <div class="box large">
-            <h2>Domande fatte</h2>
-            <p class="small">Può descrivere il suo percorso formativo, includendo titoli di studio e certificazioni professionali? Certamente. Sono laureato con lode in Economia, un percorso che mi ha fornito solide basi in analisi finanziaria, gestione del rischio e strategie di investimento. Nel corso degli anni ho arricchito la mia formazione con certificazioni professionali rilevanti, tra cui l'iscrizione all’Albo OCF come consulente finanziario abilitato all’offerta fuori sede e certificazioni MiFID II. Ho inoltre completato corsi di specializzazione in wealth management e pianificazione patrimoniale, sempre con l'obiettivo di offrire un servizio di consulenza di alto livello.
-Quale dimensione di portafoglio gestisce attualmente e quali performance ha raggiunto nell'ultimo anno? Attualmente gestisco un portafoglio che si attesta su [inserire cifra] milioni di euro, suddiviso tra clienti privati, imprenditori e investitori istituzionali. Nell'ultimo anno ho raggiunto una performance media del [inserire percentuale]%, con un’attenzione particolare alla diversificazione del rischio e all’ottimizzazione del rendimento in un contesto di mercato complesso. Le mie strategie si basano su un’analisi approfondita dei trend macroeconomici e sulla personalizzazione delle soluzioni di investimento per ogni cliente.
-Come gestisce il suo team e quali strategie utilizza per motivare i collaboratori? La gestione del team è per me un aspetto fondamentale. Credo in una leadership basata sull’esempio, sulla trasparenza e sul continuo sviluppo delle competenze. Organizzo regolarmente incontri di aggiornamento e formazione, incentivando una cultura del merito e dell’innovazione. Utilizzo strategie di incentivazione basate su obiettivi chiari e misurabili, valorizzando i successi individuali e collettivi. Ritengo inoltre essenziale creare un ambiente di lavoro collaborativo, in cui ogni membro del team si senta coinvolto e valorizzato.
-Quali attività svolge per il suo sviluppo professionale continuo? Investo costantemente nel mio aggiornamento professionale attraverso corsi di formazione avanzata, conferenze internazionali e seminari sulle nuove tendenze finanziarie. Dedico particolare attenzione agli sviluppi normativi e tecnologici, con un focus su fintech, intelligenza artificiale applicata alla gestione degli investimenti e sostenibilità finanziaria. Inoltre, collaboro con altri professionisti del settore per scambiare idee e best practices, mantenendo sempre una visione innovativa e strategica.
-Quali lingue straniere conosce e a che livello? Parlo fluentemente l’inglese, sia a livello scritto che orale, essenziale per interagire con clienti internazionali e seguire le dinamiche dei mercati globali. Ho una buona conoscenza del francese, che utilizzo principalmente nella lettura di documenti finanziari e in alcune conversazioni professionali. Sto inoltre approfondendo lo spagnolo per ampliare ulteriormente la mia capacità di comunicare con una clientela sempre più diversificata.</p>
-        </div>
+Nonostante l'esperienza professionale soddisfi i requisiti temporali e le competenze relazionali/commerciali siano evidenti, l'assenza di informazioni su requisiti fondamentali (in particolare iscrizione OCF) non permette di confermare l'idoneità del candidato.</div>
     </div>
 </body>
 </html>
