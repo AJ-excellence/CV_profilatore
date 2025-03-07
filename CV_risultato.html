@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bocciato</title>
+    <title>Esito</title>
     <style>
         body {
             display: flex;
@@ -12,37 +12,41 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-        }
-        .bocciato {
-            font-size: 80px;
-            font-weight: bold;
-            color: red;
-            border: 5px solid red;
-            padding: 20px;
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
             text-align: center;
+        }
+        .container {
             background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            max-width: 400px;
+        }
+        .esito {
+            font-size: 40px;
+            font-weight: bold;
+            color: #c62828;
+            padding: 10px;
         }
         .risultato {
-            font-size: 20px;
-            color: black;
-            margin-top: 20px;
-            text-align: center;
-            font-weight: normal;
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="bocciato">
-        BOCCIATO
-    </div>
-    <div class="risultato">
-        Mi trovo impossibilitato a fornire un'analisi poiché non è stato condiviso alcun CV da esaminare. Nell'input fornito vedo solo:
-1. I requisiti della posizione
-2. Le istruzioni per l'analisi
+    <div class="container">
+        <div class="esito">BOCCIATO</div>
+        <div class="risultato">Punti critici che rendono il candidato non idoneo:
 
-Per procedere con la valutazione richiesta, avrei bisogno del CV del candidato da confrontare con questi requisiti.
+1. Mancanza iscrizione all'albo OCF (requisito obbligatorio)
+2. Nessuna esperienza in ambito consulenza finanziaria né certificazioni MIFID
+3. Background professionale completamente diverso (retail/abbigliamento)
+4. Mancanza di esperienza specifica nella gestione di portafogli finanziari
+
+Mentre il diploma quinquennale soddisfa il requisito minimo di istruzione e le capacità relazionali/commerciali sono presenti, l'assenza di qualifiche ed esperienza specifiche nel settore finanziario rendono il candidato non adatto per la posizione.</div>
     </div>
 </body>
 </html>
