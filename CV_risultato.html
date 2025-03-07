@@ -54,6 +54,29 @@
             padding: 10px;
             margin-top: 10px;
         }
+        .analisi-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .analisi-item {
+            width: 48%;
+        }
+        .questions-list {
+            text-align: left;
+            font-size: 14px;
+            color: #555;
+            margin-top: 15px;
+        }
+        .question-item {
+            margin-bottom: 10px;
+        }
+        .question-title {
+            font-weight: bold;
+        }
+        .question-answer {
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
@@ -62,9 +85,13 @@
             <div class="title">Esito Analisi CV</div>
             <div class="esito">PROMOSSO</div>
         </div>
+        
         <div class="section">
-            <div class="title">Analisi CV</div>
-            <div class="content">### Analisi della struttura e presentazione
+            <div class="title">Analisi CV e Profilo Comportamentale</div>
+            <div class="analisi-container">
+                <div class="analisi-item">
+                    <div class="title">Analisi CV</div>
+                    <div class="content">### Analisi della struttura e presentazione
 - CV ben strutturato e organizzato in sezioni chiare
 - Linguaggio professionale e specifico del settore
 - Buona evidenza di progressione di carriera
@@ -86,10 +113,10 @@
 - Esperienza progressiva e rilevante
 - Certificazioni di alto livello
 - Orientamento al cliente</div>
-        </div>
-        <div class="section">
-            <div class="title">Profilo Comportamentale</div>
-            <div class="content">### Tratti comportamentali principali
+                </div>
+                <div class="analisi-item">
+                    <div class="title">Profilo Comportamentale</div>
+                    <div class="content">### Tratti comportamentali principali
 - Forte orientamento al cliente e capacità di ascolto
 - Approccio analitico e metodico
 - Leadership e gestione conflitti matura
@@ -112,19 +139,30 @@ Profilo senior con ottime competenze tecniche e comportamentali. Dimostra:
 - Verificare dati quantitativi mancanti su performance
 - Approfondire gestione team e delega
 - Valutare esperienza con clientela internazionale</div>
+                </div>
+            </div>
         </div>
+
         <div class="section">
             <div class="title">Domande Fatte</div>
-            <div class="content">Può descrivere il suo percorso formativo, includendo titoli di studio, certificazioni professionali e conoscenze linguistiche? 
- Ho conseguito una laurea con lode in Economia e Finanza, che mi ha fornito solide competenze in analisi dei mercati, gestione del rischio e pianificazione finanziaria. Successivamente, ho ottenuto la certificazione OCF per l’iscrizione all’Albo dei Consulenti Finanziari, oltre a certificazioni MiFID II per l'operatività nei mercati regolamentati. Ho approfondito ulteriormente le mie competenze con corsi di specializzazione in wealth management e strategie di investimento avanzate. Parlo fluentemente inglese, una competenza essenziale per l’analisi di report finanziari internazionali e per la gestione di clienti esteri. Ho inoltre una buona conoscenza del francese, che utilizzo in contesti professionali.
-Quali software e strumenti finanziari utilizza quotidianamente nel suo lavoro? 
- Nel mio lavoro quotidiano utilizzo piattaforme di trading avanzate come Bloomberg Terminal e Reuters Eikon per l’analisi dei mercati. Per la gestione del portafoglio e il monitoraggio delle performance, faccio affidamento su software come Morningstar Direct e FactSet. Uso strumenti di modellizzazione finanziaria basati su Excel e Python per valutazioni quantitative e analisi del rischio. Inoltre, mi avvalgo di CRM specializzati per la gestione della clientela e la personalizzazione delle strategie di investimento.
-Qual è la dimensione del portafoglio che gestisce attualmente e quali risultati significativi ha raggiunto? 
- Attualmente gestisco un portafoglio di [inserire cifra] milioni di euro, con una diversificazione tra asset tradizionali e strumenti innovativi. Nell’ultimo anno ho ottenuto una crescita del [inserire percentuale]%, superando i benchmark di riferimento grazie a una strategia orientata alla protezione del capitale e all’ottimizzazione del rendimento. Un risultato significativo è stato l'incremento della fidelizzazione dei clienti, con un tasso di retention superiore al 79%.
-Come gestisce situazioni di conflitto con clienti particolarmente esigenti? 
- Affronto i conflitti con un approccio basato sull’ascolto attivo e sulla trasparenza. Mi assicuro di comprendere appieno le preoccupazioni del cliente, fornendo spiegazioni chiare e supportate da dati oggettivi. Propongo soluzioni personalizzate, illustrando i vantaggi e i rischi in modo dettagliato. Inoltre, mantengo sempre un atteggiamento professionale e proattivo, anticipando possibili problematiche e lavorando per costruire una relazione di fiducia a lungo termine.
-Quali attività extra-lavorative o hobby pratica e come contribuiscono al suo sviluppo professionale? 
- Nel tempo libero pratico sport come il golf e il tennis, attività che mi aiutano a mantenere concentrazione e disciplina, qualità fondamentali anche nel mio lavoro. Sono appassionato di lettura, in particolare di libri su economia comportamentale e psicologia finanziaria, per migliorare la mia capacità di interpretare le dinamiche dei mercati e le scelte degli investitori. Partecipo inoltre a eventi di networking e conferenze finanziarie, per rimanere aggiornato sulle tendenze del settore e ampliare la mia rete di contatti professionali.</div>
+            <div class="questions-list">
+                <div class="question-item">
+                            <div class="question-title">• Può descrivere il suo percorso formativo, includendo titoli di studio, certificazioni professionali e conoscenze linguistiche?</div>
+                            <div class="question-answer">Ho conseguito una laurea con lode in Economia e Finanza, che mi ha fornito solide competenze in analisi dei mercati, gestione del rischio e pianificazione finanziaria. Successivamente, ho ottenuto la certificazione OCF per l’iscrizione all’Albo dei Consulenti Finanziari, oltre a certificazioni MiFID II per l'operatività nei mercati regolamentati. Ho approfondito ulteriormente le mie competenze con corsi di specializzazione in wealth management e strategie di investimento avanzate. Parlo fluentemente inglese, una competenza essenziale per l’analisi di report finanziari internazionali e per la gestione di clienti esteri. Ho inoltre una buona conoscenza del francese, che utilizzo in contesti professionali.</div>
+                        </div><div class="question-item">
+                            <div class="question-title">• Quali software e strumenti finanziari utilizza quotidianamente nel suo lavoro?</div>
+                            <div class="question-answer">Nel mio lavoro quotidiano utilizzo piattaforme di trading avanzate come Bloomberg Terminal e Reuters Eikon per l’analisi dei mercati. Per la gestione del portafoglio e il monitoraggio delle performance, faccio affidamento su software come Morningstar Direct e FactSet. Uso strumenti di modellizzazione finanziaria basati su Excel e Python per valutazioni quantitative e analisi del rischio. Inoltre, mi avvalgo di CRM specializzati per la gestione della clientela e la personalizzazione delle strategie di investimento.</div>
+                        </div><div class="question-item">
+                            <div class="question-title">• Qual è la dimensione del portafoglio che gestisce attualmente e quali risultati significativi ha raggiunto?</div>
+                            <div class="question-answer">Attualmente gestisco un portafoglio di [inserire cifra] milioni di euro, con una diversificazione tra asset tradizionali e strumenti innovativi. Nell’ultimo anno ho ottenuto una crescita del [inserire percentuale]%, superando i benchmark di riferimento grazie a una strategia orientata alla protezione del capitale e all’ottimizzazione del rendimento. Un risultato significativo è stato l'incremento della fidelizzazione dei clienti, con un tasso di retention superiore al 79%.</div>
+                        </div><div class="question-item">
+                            <div class="question-title">• Come gestisce situazioni di conflitto con clienti particolarmente esigenti?</div>
+                            <div class="question-answer">Affronto i conflitti con un approccio basato sull’ascolto attivo e sulla trasparenza. Mi assicuro di comprendere appieno le preoccupazioni del cliente, fornendo spiegazioni chiare e supportate da dati oggettivi. Propongo soluzioni personalizzate, illustrando i vantaggi e i rischi in modo dettagliato. Inoltre, mantengo sempre un atteggiamento professionale e proattivo, anticipando possibili problematiche e lavorando per costruire una relazione di fiducia a lungo termine.</div>
+                        </div><div class="question-item">
+                            <div class="question-title">• Quali attività extra-lavorative o hobby pratica e come contribuiscono al suo sviluppo professionale?</div>
+                            <div class="question-answer">Nel tempo libero pratico sport come il golf e il tennis, attività che mi aiutano a mantenere concentrazione e disciplina, qualità fondamentali anche nel mio lavoro. Sono appassionato di lettura, in particolare di libri su economia comportamentale e psicologia finanziaria, per migliorare la mia capacità di interpretare le dinamiche dei mercati e le scelte degli investitori. Partecipo inoltre a eventi di networking e conferenze finanziarie, per rimanere aggiornato sulle tendenze del settore e ampliare la mia rete di contatti professionali.</div>
+                        </div>
+            </div>
         </div>
     </div>
 </body>
