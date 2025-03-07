@@ -3,68 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esito</title>
+    <title>Esito Analisi</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
         body {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f8f9fa;
-            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+            background-color: #f4f4f4;
             text-align: center;
         }
         .container {
-            background-color: white;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 600px;
+            background: white;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .titolo {
-            font-size: 24px;
+        .section {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+        .title {
+            font-size: 20px;
             font-weight: bold;
             color: #333;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
+        }
+        .content {
+            font-size: 14px;
+            color: #555;
+            white-space: pre-line;
         }
         .esito {
-            font-size: 40px;
+            font-size: 24px;
             font-weight: bold;
-            color: #c62828;
+            color: #2e7d32;
             padding: 10px;
-        }
-        .risultato {
-            font-size: 16px;
-            color: #555;
             margin-top: 10px;
-            white-space: pre-line;
+        }
+        .analisi-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .analisi-item {
+            width: 48%;
+        }
+        .questions-list {
+            text-align: left;
+            font-size: 14px;
+            color: #555;
+            margin-top: 15px;
+        }
+        .question-item {
+            margin-bottom: 10px;
+        }
+        .question-title {
+            font-weight: bold;
+        }
+        .question-answer {
+            margin-left: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="titolo">Esito Analisi CV</div>
-        <div class="esito">BOCCIATO</div>
-        <div class="risultato">Motivi di non idoneità:
+        <div class="section">
+            <div class="title">Esito Analisi CV</div>
+            <div class="esito">PROMOSSO</div>
+        </div>
+        
+        <div class="section">
+            <div class="analisi-container">
+                <div class="analisi-item">
+                    <div class="title">Analisi CV</div>
+                    <div class="content">**Valutazione complessiva del CV:**
 
-1. Requisiti formali mancanti:
-- Nessuna iscrizione all'albo OCF
-- Assenza certificazioni MIFID
-- Non specificato il titolo di studio richiesto
+- CV strutturato in modo chiaro e professionale
+- Linguaggio appropriato e orientato agli obiettivi
+- Percorso lineare e coerente nel settore finanziario
 
-2. Esperienza non pertinente:
-- Background esclusivamente nel retail/GDO
-- Nessuna esperienza in ambito finanziario/bancario
-- Mancanza dei 3-5 anni richiesti nel settore consulenziale finanziario
+**Punti di forza:**
+- Formazione specifica in ambito economico
+- Progressione di carriera rapida
+- Esperienza diretta nella consulenza finanziaria
 
-3. Competenze non allineate:
-- Nessuna competenza in ambito finanziario
-- Nessuna esperienza nella gestione di portafogli clienti
-- Mancanza totale di conoscenze specifiche del settore bancario
+**Aree di miglioramento:**
+- Limitata esperienza lavorativa (3-4 anni)
+- Mancanza di certificazioni specifiche del settore
+- Assenza di competenze linguistiche indicate
 
-Il CV è completamente disallineato rispetto al profilo ricercato.</div>
+**Competenze evidenziate:**
+- Gestione portafoglio clienti
+- Consulenza finanziaria
+- Analisi investimenti
+- Reporting finanziario</div>
+                </div>
+                <div class="analisi-item">
+                    <div class="title">Profilo Comportamentale</div>
+                    <div class="content">**Valutazione del profilo comportamentale:**
+
+Non è possibile effettuare un'analisi comportamentale completa e dettagliata in quanto le risposte alle domande mirate sono indicate come "BOH", rendendo impossibile valutare:
+
+- Gestione dello stress
+- Interessi personali
+- Feedback ricevuti
+- Motivazioni professionali
+- Capacità di leadership
+
+**Suggerimenti:**
+- Necessario approfondire la capacità di gestione dello stress
+- Importante verificare le soft skills
+- Utile indagare la motivazione professionale
+- Da valutare le competenze relazionali
+- Opportuno analizzare lo stile di leadership</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="title">Domande Fatte</div>
+            <div class="questions-list">
+                <div class="question-item">
+                            <div class="question-title">• Può descrivere una situazione lavorativa particolarmente stressante e come l'ha gestita?</div>
+                            <div class="question-answer">BOH</div>
+                        </div><div class="question-item">
+                            <div class="question-title">• Quali sono i suoi principali hobby e interessi extra-lavorativi?</div>
+                            <div class="question-answer">BOH</div>
+                        </div><div class="question-item">
+                            <div class="question-title">• Quale feedback ha ricevuto dai suoi superiori nell'ultimo anno?</div>
+                            <div class="question-answer">BOH</div>
+                        </div><div class="question-item">
+                            <div class="question-title">• Cosa l'ha spinta a scegliere la carriera di consulente finanziario?</div>
+                            <div class="question-answer">BOH</div>
+                        </div><div class="question-item">
+                            <div class="question-title">• Come descriverebbe il suo stile di leadership quando lavora in team?</div>
+                            <div class="question-answer">BOH</div>
+                        </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
