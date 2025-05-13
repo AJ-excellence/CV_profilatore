@@ -3,66 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esito</title>
+    <title>Esito Analisi</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
         body {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f8f9fa;
-            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+            background-color: #f4f4f4;
             text-align: center;
         }
         .container {
-            background-color: white;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 600px;
+            background: white;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .titolo {
-            font-size: 24px;
+        .section {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+        .title {
+            font-size: 20px;
             font-weight: bold;
             color: #333;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
+        }
+        .content {
+            font-size: 14px;
+            color: #555;
+            white-space: pre-line;
         }
         .esito {
-            font-size: 40px;
+            font-size: 24px;
             font-weight: bold;
-            color: #c62828;
+            color: #2e7d32;
             padding: 10px;
-        }
-        .risultato {
-            font-size: 16px;
-            color: #555;
             margin-top: 10px;
-            white-space: pre-line;
+        }
+        .analisi-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .analisi-item {
+            width: 48%;
+        }
+        .questions-list {
+            text-align: left;
+            font-size: 14px;
+            color: #555;
+            margin-top: 15px;
+        }
+        .question-item {
+            margin-bottom: 10px;
+        }
+        .question-title {
+            font-weight: bold;
+        }
+        .question-answer {
+            margin-left: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="titolo">Esito Analisi CV</div>
-        <div class="esito">BOCCIATO</div>
-        <div class="risultato">Il CV non soddisfa i requisiti essenziali per la posizione di consulente finanziario:
+        <div class="section">
+            <div class="title">Esito Analisi CV</div>
+            <div class="esito">PROMOSSO</div>
+        </div>
+        
+        <div class="section">
+            <div class="analisi-container">
+                <div class="analisi-item">
+                    <div class="title">Analisi CV</div>
+                    <div class="content">**Presentazione e Struttura**
+- CV ben strutturato e professionale
+- Linguaggio formale e appropriato al ruolo
+- Focus sui risultati e competenze chiave
 
-1. Requisiti obbligatori assenti:
-- Manca iscrizione all'albo OCF
-- Nessuna certificazione MIFID
-- Nessuna esperienza nel settore finanziario/bancario
+**Esperienza Professionale**
+- 10+ anni nel settore finanziario
+- Crescita progressiva fino al ruolo senior
+- Background in primaria banca italiana
 
-2. Background professionale non pertinente:
-- Esperienza esclusivamente nel retail/abbigliamento
-- Nessuna competenza specifica in ambito finanziario
-- Mancanza totale di esperienza consulenziale nel settore richiesto
+**Competenze Evidenziate**
+- Pianificazione finanziaria e patrimoniale
+- Gestione clientela HNWI
+- Analisi mercati e risk management
 
-3. Formazione non specificata:
-- Nessuna informazione sul titolo di studio richiesto
+**Criticità Rilevate**
+- Mancanza dettagli su obiettivi raggiunti
+- Informazioni limitate su formazione
+- Assenza certificazioni professionali</div>
+                </div>
+                <div class="analisi-item">
+                    <div class="title">Profilo Comportamentale</div>
+                    <div class="content">**Profilo Comportamentale**
+- Approccio metodico e analitico
+- Focus sulla pianificazione strategica
+- Orientamento alla consulenza di alto livello
 
-La candidata, nonostante dimostri buone capacità manageriali e relazionali, non possiede i requisiti fondamentali e l'esperienza necessaria per il ruolo di consulente finanziario.</div>
+**Analisi Risposte**
+- Risposte inappropriate e non professionali ('gli ho riso in faccia')
+- Atteggiamento superficiale verso la gestione del team ('carota e bastone')
+- Mancanza di dettagli concreti su KPI e performance
+
+**Valutazione Finale**
+- Forte discrepanza tra CV professionale e risposte comportamentali
+- Segnali di immaturità professionale nelle risposte
+- Necessità di approfondire la reale esperienza e professionalità
+
+**Red Flags**
+- Atteggiamento non consono al ruolo senior
+- Possibile mancanza di soft skills adeguate
+- Risposte evasive su metriche di performance</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="title">Domande Fatte</div>
+            <div class="questions-list">
+                <div class="question-item">
+                            <div class="question-title">• Può descrivere il suo percorso formativo, includendo titoli di studio e certificazioni professionali rilevanti per il ruolo?</div>
+                            <div class="question-answer">magnifico</div>
+                        </div><div class="question-item">
+                            <div class="question-title">• Quale dimensione di portafoglio gestisce attualmente e quali sono stati i suoi principali KPI nell'ultimo anno?</div>
+                            <div class="question-answer">Attualmente gestisco un portafoglio del valore complessivo di circa X milioni di euro (sostituisci con il valore reale), composto principalmente da [tipologia di strumenti, es. azioni, obbligazioni, fondi bilanciati, assicurazioni, ecc.], distribuiti tra clienti retail, affluent e HNWI (High Net Worth Individuals).  Principali KPI (Key Performance Indicators):  Performance media netta del portafoglio: +X% annuo (vs benchmark Y%)  Tasso di fidelizzazione dei clienti: X% (su base annua)  Net New Money (NNM): €X milioni nell’ultimo anno  Asset Under Management (AUM) growth: +X% rispetto all’anno precedente  Soddisfazione cliente (NPS): X (Net Promoter Score)  Tasso di consulenza attiva: X% del portafoglio sotto advisory evoluta</div>
+                        </div><div class="question-item">
+                            <div class="question-title">• Mi racconti di una situazione critica con un cliente durante un periodo di volatilità dei mercati e come l'ha gestita.</div>
+                            <div class="question-answer">gli ho riso in faccia</div>
+                        </div><div class="question-item">
+                            <div class="question-title">• Ha esperienza nella gestione di team? Se sì, quale approccio utilizza per motivare e coordinare i collaboratori?</div>
+                            <div class="question-answer">Carota e bastone</div>
+                        </div><div class="question-item">
+                            <div class="question-title">• Come si tiene aggiornato professionalmente e quali attività extra-lavorative svolge per il suo sviluppo personale?</div>
+                            <div class="question-answer">Paddle</div>
+                        </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
