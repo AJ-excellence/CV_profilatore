@@ -3,156 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esito Analisi</title>
+    <title>Esito</title>
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            background-color: #f4f4f4;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
             text-align: center;
         }
         .container {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            max-width: 600px;
-            background: white;
+            background-color: white;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            max-width: 400px;
         }
-        .section {
-            border-bottom: 1px solid #ddd;
-            padding: 15px 0;
-        }
-        .section:last-child {
-            border-bottom: none;
-        }
-        .title {
-            font-size: 20px;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 5px;
-        }
-        .content {
-            font-size: 14px;
-            color: #555;
-            white-space: pre-line;
-        }
-        .esito {
+        .titolo {
             font-size: 24px;
             font-weight: bold;
-            color: #2e7d32;
-            padding: 10px;
-            margin-top: 10px;
-        }
-        .analisi-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-        }
-        .analisi-item {
-            width: 48%;
-        }
-        .questions-list {
-            text-align: left;
-            font-size: 14px;
-            color: #555;
-            margin-top: 15px;
-        }
-        .question-item {
+            color: #333;
             margin-bottom: 10px;
         }
-        .question-title {
+        .esito {
+            font-size: 40px;
             font-weight: bold;
+            color: #c62828;
+            padding: 10px;
         }
-        .question-answer {
-            margin-left: 10px;
+        .risultato {
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px;
+            white-space: pre-line;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="section">
-            <div class="title">Esito Analisi CV</div>
-            <div class="esito">PROMOSSO</div>
-        </div>
-        
-        <div class="section">
-            <div class="analisi-container">
-                <div class="analisi-item">
-                    <div class="title">Analisi CV</div>
-                    <div class="content">**Analisi della Struttura e Contenuti**
-- CV ben organizzato con sezioni chiare
-- Linguaggio professionale e appropriato
-- Focus sulle competenze di consulenza finanziaria
+        <div class="titolo">Esito Analisi CV</div>
+        <div class="esito">BOCCIATO</div>
+        <div class="risultato">Nel CV non è menzionata l'iscrizione all'albo OCF, che è un requisito fondamentale e obbligatorio per legge per esercitare il ruolo di consulente finanziario in offerta fuori sede.
 
-**Punti di Forza**
-- 8+ anni di esperienza nel settore
-- Progressione di carriera documentata
-- Competenze specifiche in pianificazione patrimoniale
+Punti critici:
+1. Mancata indicazione dell'iscrizione all'albo OCF
+2. Nessuna informazione sul titolo di studio (laurea/diploma)
+3. Assenza di certificazioni MIFID
 
-**Criticità**
-- Mancanza di dettagli formativi
-- Assenza di certificazioni professionali
-- Pochi dati quantitativi sui risultati
-
-**Competenze Chiave**
-- Gestione portafogli alto valore
-- Pianificazione finanziaria
-- Capacità relazionali
-- Organizzazione eventi formativi</div>
-                </div>
-                <div class="analisi-item">
-                    <div class="title">Profilo Comportamentale</div>
-                    <div class="content">**Valutazione Comportamentale**
-- Profilo iniziale: orientamento al cliente, approccio didattico
-- Risposte alle domande indicano:
-  • Scarsa professionalità nelle risposte
-  • Approccio superficiale al lavoro
-  • Limitata propensione alla crescita
-
-**Red Flags**
-- Risposte inappropriate e non professionali
-- Mancanza di obiettivi di sviluppo chiari
-- Scarso interesse per aggiornamento professionale
-- Difficoltà nei rapporti interprofessionali
-
-**Conclusione**
-Nonostante il CV suggerisca un profilo senior con buone competenze, l'analisi comportamentale rivela criticità significative in termini di professionalità, motivazione e soft skills. Si consiglia ulteriore approfondimento o esclusione dalla selezione.</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="title">Domande Fatte</div>
-            <div class="questions-list">
-                <div class="question-item">
-                            <div class="question-title">• Può raccontarmi di una situazione particolarmente complessa con un cliente durante un periodo di alta volatilità dei mercati? Come l'ha gestita?</div>
-                            <div class="question-answer">ho mangiato arancini</div>
-                        </div><div class="question-item">
-                            <div class="question-title">• Quale esperienza ha nella formazione e nel mentoring di colleghi junior?</div>
-                            <div class="question-answer">50</div>
-                        </div><div class="question-item">
-                            <div class="question-title">• Come gestisce la collaborazione con altre funzioni aziendali, ad esempio il team legale o il back office?</div>
-                            <div class="question-answer">non lo so non ci parlo</div>
-                        </div><div class="question-item">
-                            <div class="question-title">• Quali sono i suoi obiettivi di crescita professionale per i prossimi 3-5 anni?</div>
-                            <div class="question-answer">andare in pensione</div>
-                        </div><div class="question-item">
-                            <div class="question-title">• Come si mantiene aggiornato professionalmente? Partecipa a corsi o attività extra-lavorative specifiche?</div>
-                            <div class="question-answer">guardo i reel appena stacco</div>
-                        </div>
-            </div>
-        </div>
+Nonostante l'esperienza professionale e le capacità relazionali sembrino in linea con i requisiti richiesti, l'assenza dell'iscrizione all'albo OCF e la mancanza di informazioni su titolo di studio e certificazioni MIFID rappresentano lacune significative che rendono il CV non idoneo per la posizione.</div>
     </div>
 </body>
 </html>
